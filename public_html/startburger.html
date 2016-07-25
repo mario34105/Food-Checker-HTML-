@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Black Bean Burger|FoodChecker</title>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	<style>
+	@import url(http://weloveiconfonts.com/api/?family=zocial);
+	[class*="zocial-"]:before {
+		font-family: 'zocial', sans-serif;
+	}
+	.zocial-facebook{
+		width:30px;
+	}
+	.zocial-instagram{
+		width:30px;
+	}
+	.facebook a{
+			text-decoration : none;
+			border:none;
+			display:block;
+			font-size:20px;
+			color:#fff;
+			text-align:center;
+			margin:auto;
+			transition:1s;
+			float:left;
+		}
+	.insta a{
+			text-decoration : none;
+			border:none;
+			display:block;
+			font-size:20px;
+			color:#fff;
+			text-align:center;
+			margin:auto;
+			transition:1s;
+		}
+	html{
+		overflow: hidden;
+	}
+	body{
+		background:rgba(0,0,0,1);
+		font-family:Hanken;
+	}
+	.wrapper{
+		width: 100%;
+		height: 668px;
+		padding:0px;
+	}
+	
+	.body{
+		margin:auto;
+		width: 100%;
+		height: 701px;
+	}
+	.container{
+		float:left;
+		width:50%;
+		height:50%;
+	}
+	.container:nth-child(1){
+		height:100%;
+		width:100%;
+		background: 
+				linear-gradient(0deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%), url(pictures/Offer/start/food.jpg) 0 0 ;
+		background-size:cover;
+	}
+	.container:nth-child(2){
+		height:100%;
+		width:100%;
+		background: 
+				linear-gradient(0deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%), url(pictures/Offer/start/recipe.jpg) 0 0 ;
+		background-size:cover;
+	}
+	.container:nth-child(3){
+		height:100%;
+		width:100%;
+		background: 
+				linear-gradient(0deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%), url(pictures/Offer/start/video.jpg) 0 0 ;
+		background-size:cover;
+	}
+	.content1{
+		height:150px;
+		width:600px;
+		margin:auto;
+		text-align:center;
+		margin-top:150px;
+		color:white;
+	}
+	.container a{
+		color:white;
+		text-decoration:none;
+		padding:5px 40px;
+		border:3px white solid;
+		border-radius:20px;
+		font-size:20px;
+		transition:0.5s;
+	}
+	.container a:hover{
+		border:3px orange solid;
+	}
+	.footer{
+		margin-top:-70px;
+		width:1502px;
+		height:200px;
+		position:fixed;
+		background:black;
+	}
+	.subfooter{
+		background:rgba(140, 140, 140,0.1);
+		width:100%;
+		height:90px;
+	}
+	.footer_b a{
+		color:gray;
+		text-decoration:none;
+		font-size:20px;
+		margin-right:20px;
+		transition:0.5s;
+	}
+	.footer_b a:hover{
+		color:white;
+	}
+	.footer_c {
+		width:100px;
+		float:right;
+		margin-right:30px;
+	}
+	.footer_c a{
+		color:gray;
+		transition:0.5s;
+	}
+	.footer_c a:hover{
+		color:white;
+	}
+	.nav li{
+		display:inline;
+	}
+	.nav li a img{
+		transition:0.5s;
+	}
+	.nav li a img:hover{
+		transform:scale(1.5,1.5);
+	}
+	video{
+		background-size:100%;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="row">
+			<div class="body">
+			
+					<div class="container" id="1">
+					<img src="pictures/Offer/start/Burger/BlackBean/cheeseburger.jpg" style="float:left;width:50%;height:100%">
+					<div class="content1" style="float:right;margin-top:70px;margin-right:50px">
+						<h1 style="font-size:100px">Black Bean Burger</h1>
+						<h2 style="font-family:Myriad Pro;font-size:50px;">LET'S <i style="color:orange">DIG IN</i></h2> 
+					</div>
+				</div>
+			
+			
+					<div class="container" id="2">
+					<img src="pictures/Offer/start/recipe.png" style="float:right;margin-top:220px">
+					<div class="content1" style="float:left;margin-top:70px;margin-left:50px">
+						<h1 style="font-size:60px">INGREDIENTS</h1>
+						<hr style="margin-top:-45px;width:400px;height:3px;background:white;border-radius:5px;">
+						<br>
+						<div class="info">
+						<h2 style="text-align:left;margin-left:100px;"><b style="color:orange">2</b> cans black beans, rinsed and drained</h2>
+						<h2 style="text-align:left;margin-left:100px;"><b style="color:orange">1</b> onion, minced</h2>
+						<h2 style="text-align:left;margin-left:100px;"><b style="color:orange">3</b> garlic cloves, minced</h2>
+						<h2 style="text-align:left;margin-left:100px;"><b style="color:orange">2</b> carrots, shredded</h2>
+						<h2 style="text-align:left;margin-left:100px;"><b style="color:orange">1/2</b> cup quick oats</h2>
+						<h2 style="text-align:left;margin-left:100px;"><b style="color:orange">1</b> Tbsp. soy sauce</h2>
+						<h2 style="text-align:left;margin-left:100px;"><b style="color:orange">1</b> Tbsp. olive oil</h2>
+						</div>
+						<div class="info" style="float:right;margin-right:-400px;margin-top:-345px">
+						<h2 style="text-align:left;margin-left:100px;"><b style="color:orange">1</b> tsp cumin</h2>
+						<h2 style="text-align:left;margin-left:100px;"><b style="color:orange">1/2</b> tsp coriander</h2>
+						<h2 style="text-align:left;margin-left:100px;"><b style="color:orange">1/2</b> tsp chili powder</h2>
+						<h2 style="text-align:left;margin-left:100px;"><b style="color:orange">1/4</b> tsp cayenne pepper</h2>
+						<h2 style="text-align:left;margin-left:100px;">Salt and pepper to taste</h2>
+						<h2 style="text-align:left;margin-left:100px;">Buns</h2>
+						</div>
+					</div>
+				</div>
+			
+					<div class="container" id="3" style="margin-bottom:100px">
+					<video controls poster="pictures/Offer/start/Burger/BlackBean/poster.jpg" style="width:50%;border-radius:14px;margin-top:100px;margin-left:50px">
+  						<source src="videos/1.mp4" type="video/mp4">
+  						<source src="videos/1.ogg" type="video/ogg">
+					</video>
+					<div class="content1" style="float:right;margin-top:70px;margin-right:50px">
+						<h1 style="font-size:80px">DON'T WORRY</h1>
+						<h2 style="font-family:Myriad Pro;font-size:50px;">WE HAVE THE <i style="color:orange">VIDEO</i> <br>FOR YOU
+						<br><br>ENJOY</h2> 
+					</div>
+				</div>
+
+			</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="footer">
+				<div class="subfooter">
+					<div class="footer_a" style="padding:25px;float:left;margin-top:-2px">
+						<a href="home.html" style="float:left;font-size:40px;color:white;text-decoration:none;">Food Checker
+						</a>
+					</div>
+					
+					<div class="footer_c" style="margin-top:32px;margin-right:-10px">
+						<span class="facebook">
+							<a class="zocial-facebook" href="https://www.facebook.com/mario.yaputra" target="_blank"></a>
+						</span>
+						<span class="insta">
+							<a class="zocial-instagram" href="https://www.instagram.com/mario_yaputra/" target="_blank"></a>
+						</span>
+					</div>
+
+					<div class="footer_b" style="padding:35px;float:right;margin-right:380px">
+						<a href="home.html">Home</a>
+						<a href="history.html">History</a>
+						<a href="offer.html" style="color:white">Our Offer</a>
+						<a href="news.html">News</a>
+						<a href="contact.html">Contact Us</a>
+					</div>
+
+					<div class="nav" style="padding:35px;float:right;margin-right:-930px;margin-top:-15px">
+						<ul>
+							<li><a href="#1"><img src="pictures/Navigation/nav.png" style="width:7%;height:7%"></a></li>
+							<li><img src="pictures/Navigation/nav1.png" style="width:7%;height:7%;margin-bottom:7px"></li>
+							<li><a href="#2"><img src="pictures/Navigation/nav.png" style="width:7%;height:7%"></a></li>
+							<li><img src="pictures/Navigation/nav1.png" style="width:7%;height:7%;margin-bottom:7px"></li>
+							<li><a href="#3"><img src="pictures/Navigation/nav.png" style="width:7%;height:7%"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="realfooter">
+					<div class="footercontent" style="width:11%;margin:auto;color:grey">
+						<p>&copy;FoodChecker 2016</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

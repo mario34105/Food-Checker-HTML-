@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>History|FoodChecker</title>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	<style>
+	@import url(http://weloveiconfonts.com/api/?family=zocial);
+	[class*="zocial-"]:before {
+		font-family: 'zocial', sans-serif;
+	}
+	.zocial-facebook{
+		width:30px;
+	}
+	.zocial-instagram{
+		width:30px;
+	}
+	.facebook a{
+			text-decoration : none;
+			border:none;
+			display:block;
+			font-size:20px;
+			color:#fff;
+			text-align:center;
+			margin:auto;
+			transition:1s;
+			float:left;
+		}
+	.insta a{
+			text-decoration : none;
+			border:none;
+			display:block;
+			font-size:20px;
+			color:#fff;
+			text-align:center;
+			margin:auto;
+			transition:1s;
+		}
+	html{
+		overflow: hidden;
+	}
+	body{
+		background:rgba(0,0,0,1);
+		font-family:Hanken;
+	}
+	.wrapper{
+		width: 100%;
+		height: 668px;
+		padding:0px;
+	}
+	
+	.body{
+		margin:auto;
+		width: 100%;
+		height: 701px;
+	}
+	.container{
+		float:left;
+		width:50%;
+		height:50%;
+	}
+	.container:nth-child(1){
+		height:100%;
+		width:100%;
+		background: 
+				linear-gradient(0deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%), url(pictures/History/discover.jpg) 0 0 ;
+		background-size:cover;
+	}
+	.container:nth-child(2){
+		height:100%;
+		width:100%;
+		background: 
+				linear-gradient(270deg, rgba(0, 0, 0,0) 55%, rgba(0, 0, 0,0.6) 45%),url(pictures/History/crappy1.jpg) 0 0 ;
+		background-size:cover;
+	}
+	.container:nth-child(3){
+		height:100%;
+		width:100%;
+		background: 
+				linear-gradient(90deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.6) 45%), url(pictures/History/second.jpg) 0 0 ;
+		background-size:cover;
+	}
+	.container:nth-child(4){
+		height:100%;
+		width:100%;
+		background: 
+				linear-gradient(270deg, rgba(0, 0, 0,0) 55%, rgba(0, 0, 0,0.6) 45%),url(pictures/History/positive.jpg) 0 0 ;
+		background-size:cover;
+	}
+	.container:nth-child(5){
+		height:100%;
+		width:100%;
+		background: 
+				linear-gradient(0deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%), url(pictures/History/food.jpg) 0 0 ;
+		background-size:cover;
+	}
+	.content1{
+		height:150px;
+		width:600px;
+		margin:auto;
+		text-align:center;
+		margin-top:150px;
+		color:white;
+	}
+	.container a{
+		color:white;
+		text-decoration:none;
+		padding:5px 40px;
+		border:3px white solid;
+		border-radius:20px;
+		font-size:20px;
+		transition:0.5s;
+	}
+	.container a:hover{
+		border:3px orange solid;
+	}
+	.footer{
+		margin-top:-70px;
+		width:1502px;
+		height:200px;
+		position:fixed;
+		background:black;
+	}
+	.subfooter{
+		background:rgba(140, 140, 140,0.1);
+		width:100%;
+		height:90px;
+	}
+	.footer_b a{
+		color:gray;
+		text-decoration:none;
+		font-size:20px;
+		margin-right:20px;
+		transition:0.5s;
+	}
+	.footer_b a:hover{
+		color:white;
+	}
+	.footer_c {
+		width:100px;
+		float:right;
+		margin-right:30px;
+	}
+	.footer_c a{
+		color:gray;
+		transition:0.5s;
+	}
+	.footer_c a:hover{
+		color:white;
+	}
+	.nav li{
+		display:inline;
+	}
+	.nav li a img{
+		transition:0.5s;
+	}
+	.nav li a img:hover{
+		transform:scale(1.5,1.5);
+	}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="row">
+			<div class="body">
+				<div class="container" id="1">
+					<div class="content1">
+						<h1 style="font-size:120px">HISTORY</h1>
+						<h2 style="font-family:Myriad Pro;font-size:50px;">DISCOVER HOW THIS WEBSITE MADE FROM 
+						<i style="color:orange">0</i></h2>
+						<a href="#2">More</a> 
+					</div>
+				</div>
+			
+			
+					<div class="container" id="2">
+					<div class="content1" style="float:left;margin-top:70px;margin-left:50px">
+						<h1 style="font-size:120px">CRAPPY</h1>
+						<h2 style="font-family:Myriad Pro;font-size:50px;">FIRST, THE DESIGN WAS REALLY <i style="color:orange">SH*T</i></h2> 
+					</div>
+				</div>
+			
+			
+					<div class="container" id="3">
+					<div class="content1" style="float:right;margin-top:70px;margin-right:50px">
+						<h1 style="font-size:100px">SECOND CHANCE</h1>
+						<h2 style="font-family:Myriad Pro;font-size:50px;">DECIDED TO IMMEDIATELY <i style="color:orange">CHANGE</i> IT</h2> 
+					</div>
+				</div>
+			
+		
+					<div class="container" id="4">
+					<div class="content1" style="float:left;margin-top:70px;margin-left:50px">
+						<h1 style="font-size:100px">ALMOST GIVE UP</h1>
+						<h2 style="font-family:Myriad Pro;font-size:50px;">BUT KEEP <i style="color:orange">TRYING</i> & STAY 
+						<i style="color:orange">POSITIVE!</i></h2> 
+					</div>
+				</div>
+
+				<div class="container" style="margin-bottom:100px" id="5">
+					<div class="content1">
+						<h1 style="font-size:100px">FINALLY</h1>
+						<h2 style="font-family:Myriad Pro;font-size:50px;">IT HAS 
+						<i style="color:orange">CHANGED</i> INTO THE ONE YOU ARE SEEING RIGHT NOW</h2> 
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="footer">
+				<div class="subfooter">
+					<div class="footer_a" style="padding:25px;float:left;margin-top:-2px">
+						<a href="home.html" style="float:left;font-size:40px;color:white;text-decoration:none;">Food Checker
+						</a>
+					</div>
+					
+					<div class="footer_c" style="margin-top:32px;margin-right:-10px">
+						<span class="facebook">
+							<a class="zocial-facebook" href="https://www.facebook.com/mario.yaputra" target="_blank"></a>
+						</span>
+						<span class="insta">
+							<a class="zocial-instagram" href="https://www.instagram.com/mario_yaputra/" target="_blank"></a>
+						</span>
+					</div>
+
+					<div class="footer_b" style="padding:35px;float:right;margin-right:380px">
+						<a href="home.html">Home</a>
+						<a href="#1" style="color:white">History</a>
+						<a href="offer.html">Our Offer</a>
+						<a href="news.html">News</a>
+						<a href="contact.html">Contact Us</a>
+					</div>
+
+					<div class="nav" style="padding:35px;float:right;margin-right:-1100px;margin-top:-15px">
+						<ul>
+							<li><a href="#1"><img src="pictures/Navigation/nav.png" style="width:4%;height:4%"></a></li>
+							<li><img src="pictures/Navigation/nav1.png" style="width:4%;height:4%;margin-bottom:7px"></li>
+							<li><a href="#2"><img src="pictures/Navigation/nav.png" style="width:4%;height:4%"></a></li>
+							<li><img src="pictures/Navigation/nav1.png" style="width:4%;height:4%;margin-bottom:7px"></li>
+							<li><a href="#3"><img src="pictures/Navigation/nav.png" style="width:4%;height:4%"></a></li>
+							<li><img src="pictures/Navigation/nav1.png" style="width:4%;height:4%;margin-bottom:7px"></li>
+							<li><a href="#4"><img src="pictures/Navigation/nav.png" style="width:4%;height:4%"></a></li>
+							<li><img src="pictures/Navigation/nav1.png" style="width:4%;height:4%;margin-bottom:7px"></li>
+							<li><a href="#5"><img src="pictures/Navigation/nav.png" style="width:4%;height:4%"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="realfooter">
+					<div class="footercontent" style="width:11%;margin:auto;color:grey">
+						<p>&copy;FoodChecker 2016</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

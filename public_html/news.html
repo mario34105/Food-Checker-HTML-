@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News|FoodChecker</title>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	<style>
+	@import url(http://weloveiconfonts.com/api/?family=zocial);
+	[class*="zocial-"]:before {
+		font-family: 'zocial', sans-serif;
+	}
+	.zocial-facebook{
+		width:30px;
+	}
+	.zocial-instagram{
+		width:30px;
+	}
+	.facebook a{
+			text-decoration : none;
+			border:none;
+			display:block;
+			font-size:20px;
+			color:#fff;
+			text-align:center;
+			margin:auto;
+			transition:1s;
+			float:left;
+		}
+	.insta a{
+			text-decoration : none;
+			border:none;
+			display:block;
+			font-size:20px;
+			color:#fff;
+			text-align:center;
+			margin:auto;
+			transition:1s;
+		}
+	html{
+		overflow: hidden;
+	}
+	body{
+		background:rgba(0,0,0,1);
+		font-family:Hanken;
+	}
+	.wrapper{
+		width: 100%;
+		height: 668px;
+		padding:0px;
+	}
+	
+	.body{
+		margin:auto;
+		width: 100%;
+		height: 668px;
+	}
+	.container{
+		float:left;
+		width:50%;
+		height:50%;
+	}
+	.container:nth-child(1){
+		height:100%;
+		width:100%;
+		background: 
+				linear-gradient(0deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%), url(pictures/News/News.jpg) 0 0 ;
+	}
+	.content1{
+		height:150px;
+		width:600px;
+		margin:auto;
+		text-align:center;
+		margin-top:150px;
+		color:white;
+	}
+	.container a{
+		color:white;
+		text-decoration:none;
+		padding:5px 40px;
+		border:3px white solid;
+		border-radius:20px;
+		font-size:20px;
+		transition:0.5s;
+	}
+	.container a:hover{
+		border:3px orange solid;
+	}
+	.footer{
+		margin-top:-70px;
+		width:1502px;
+		height:200px;
+		position:fixed;
+		background:black;
+	}
+	.subfooter{
+		background:rgba(140, 140, 140,0.1);
+		width:100%;
+		height:90px;
+	}
+	.footer_b a{
+		color:gray;
+		text-decoration:none;
+		font-size:20px;
+		margin-right:20px;
+		transition:0.5s;
+	}
+	.footer_b a:hover{
+		color:white;
+	}
+	.footer_c {
+		width:100px;
+		float:right;
+		margin-right:30px;
+	}
+	.footer_c a{
+		color:gray;
+		transition:0.5s;
+	}
+	.footer_c a:hover{
+		color:white;
+	}
+	.nav li{
+		display:inline;
+	}
+	.nav li a img{
+		transition:0.5s;
+	}
+	.nav li a img:hover{
+		transform:scale(1.5,1.5);
+	}
+	.text input {
+			width:400px;
+			height:40px;
+			border-left:6px solid white;
+			border-top:none;
+			border-bottom:none;
+			border-right:none;
+			transition:0.2s;
+			border-radius:8px;
+		}
+	.text input:hover{
+			border-left:8px solid orange;
+		}
+	.text ::-webkit-input-placeholder 
+		{ /* Chrome/Opera/Safari */
+  			font-family:Hanken;
+		}
+	.text textarea{
+			width:400px;
+			height:100px;
+			border-left:10px solid white;
+			border-top:6px solid white;
+			border-bottom:none;
+			border-right:none;
+			transition:0.2s;
+			border-radius:8px;
+	}
+	.button a{
+		padding-left:180px;
+		padding-right:180px;
+		border-radius:8px;
+	}
+	.button a:hover{
+		background:orange;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="row">
+			<div class="body">
+				<div class="container" id="1">
+					<div class="content1">
+						<h1 style="font-size:100px">COMING <b style="color:orange">SOON</b></h1>
+						<h2 style="font-family:Myriad Pro;font-size:50px;">SORRY</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="footer">
+				<div class="subfooter">
+					<div class="footer_a" style="padding:25px;float:left;margin-top:-2px">
+						<a href="#" style="float:left;font-size:40px;color:white;text-decoration:none;">Food Checker
+						</a>
+					</div>
+					
+					<div class="footer_c" style="margin-top:32px;margin-right:-10px">
+						<span class="facebook">
+							<a class="zocial-facebook" href="https://www.facebook.com/mario.yaputra" target="_blank"></a>
+						</span>
+						<span class="insta">
+							<a class="zocial-instagram" href="https://www.instagram.com/mario_yaputra/" target="_blank"></a>
+						</span>
+					</div>
+
+					<div class="footer_b" style="padding:35px;float:right;margin-right:380px">
+						<a href="home.html">Home</a>
+						<a href="history.html" >History</a>
+						<a href="offer.html">Our Offer</a>
+						<a href="#" style="color:white">News</a>
+						<a href="contact.html">Contact Us</a>
+					</div>
+
+			
+				</div>
+				<div class="realfooter">
+					<div class="footercontent" style="width:11%;margin:auto;color:grey">
+						<p>&copy;FoodChecker 2016</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

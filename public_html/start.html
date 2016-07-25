@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Choose Your Food|FoodChecker</title>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	<style>
+	@import url(http://weloveiconfonts.com/api/?family=zocial);
+	[class*="zocial-"]:before {
+		font-family: 'zocial', sans-serif;
+	}
+	.zocial-facebook{
+		width:30px;
+	}
+	.zocial-instagram{
+		width:30px;
+	}
+	.facebook a{
+			text-decoration : none;
+			border:none;
+			display:block;
+			font-size:20px;
+			color:#fff;
+			text-align:center;
+			margin:auto;
+			transition:1s;
+			float:left;
+		}
+	.insta a{
+			text-decoration : none;
+			border:none;
+			display:block;
+			font-size:20px;
+			color:#fff;
+			text-align:center;
+			margin:auto;
+			transition:1s;
+		}
+	html{
+		overflow: hidden;
+	}
+	body{
+		background:rgba(0,0,0,1);
+		font-family:Hanken;
+	}
+	.wrapper{
+		width: 100%;
+		height: 668px;
+		padding:0px;
+	}
+	
+	.body{
+		margin:auto;
+		width: 100%;
+		height: 668px;
+	}
+	.container{
+		float:left;
+		width:33.33%;
+		height:100%;
+	}
+	.container1{
+		float:left;
+		height:100%;
+		width:100%;
+		background: 
+				linear-gradient(0deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%), url(pictures/Offer/start/food.jpg) 0 0 ;
+			background-size:cover;
+	}
+	.container:nth-child(2){
+		background: 
+				linear-gradient(rgba(255, 128, 0,0.95) 50%, rgba(255, 128, 0,0.95) 50%), url(pictures/Offer/start/wall1.jpg) 0 0 ;
+				background-size:cover;
+	}
+	.container:nth-child(3){
+		background: 
+				linear-gradient(rgba(255, 51, 51,0.95) 50%, rgba(255, 51, 51,0.95) 50%), url(pictures/Offer/start/wall2.jpg) 0 0 ;
+				background-size:cover;	
+	}
+	.container:nth-child(4){
+		background: 
+				linear-gradient(rgba(36, 143, 36,0.95) 50%, rgba(36, 143, 36,0.95) 50%), url(pictures/Offer/start/wall3.jpg) 0 0 ;
+				background-size:cover;
+	}
+	.content{
+		height:150px;
+		width:300px;
+		margin:auto;
+		text-align:center;
+		margin-top:250px;
+		color:white;
+	}
+	.content1{
+		height:150px;
+		width:600px;
+		margin:auto;
+		text-align:center;
+		margin-top:150px;
+		color:white;
+	}
+	.container a{
+		color:white;
+		text-decoration:none;
+		padding:5px 40px;
+		border:3px white solid;
+		border-radius:20px;
+		font-size:30px;
+		transition:0.5s;
+	}
+	.container1 a{
+		color:white;
+		text-decoration:none;
+		padding:5px 40px;
+		border:3px white solid;
+		border-radius:20px;
+		font-size:30px;
+		transition:0.5s;
+	}
+	.container1 a:hover{
+		border:3px orange solid;
+	}
+	.container:nth-child(2) a:hover{
+		background:white;
+		color:orange;
+	}
+	.container:nth-child(3) a:hover{
+		background:white;
+		color:red;
+	}
+	.container:nth-child(4) a:hover{
+		background:white;
+		color:green;
+	}
+	.footer{
+		margin-top:-70px;
+		width:1502px;
+		height:200px;
+		position:fixed;
+		background:black;
+	}
+	.subfooter{
+		background:rgba(140, 140, 140,0.1);
+		width:100%;
+		height:90px;
+	}
+	.footer_b a{
+		color:gray;
+		text-decoration:none;
+		font-size:20px;
+		margin-right:20px;
+		transition:0.5s;
+	}
+	.footer_b a:hover{
+		color:white;
+	}
+	.footer_c {
+		width:100px;
+		float:right;
+		margin-right:30px;
+	}
+	.footer_c a{
+		color:gray;
+		transition:0.5s;
+	}
+	.footer_c a:hover{
+		color:white;
+	}
+	.nav li{
+		display:inline;
+	}
+	.nav li a img{
+		transition:0.5s;
+	}
+	.nav li a img:hover{
+		transform:scale(1.5,1.5);
+	}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="row">
+			<div class="body">
+				<div class="container1" id="1">
+					<div class="content1">
+						<h1 style="font-size:85px;">Food Checker</h1>
+						<h2 style="font-family:Myriad Pro;font-size:50px;"> 
+						<i style="color:orange">CHOOSE</i> YOUR FOOD</h2>
+						<a href="#2">More</a> 
+					</div>
+				</div>
+				
+				<div class="container" id="2" style="margin-bottom:100px">
+					<div class="content">
+					<img src="pictures/Offer/start/Burger/burger.png">
+						<h1>Burger</h1>
+						<a href="burger.html">Go</a>
+					</div>
+				</div>
+				<div class="container">
+					<div class="content">
+					<img src="pictures/Offer/start/Pizza/pizza.png">
+						<h1>Pizza</h1>
+						<a href="#">Go</a>
+					</div>
+				</div>
+				<div class="container">
+					<div class="content">
+					<img src="pictures/Offer/start/Pasta/pasta.png">
+						<h1>Pasta</h1>
+						<a href="#">Go</a>
+					</div>
+				</div>
+ 	
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="footer">
+				<div class="subfooter">
+					<div class="footer_a" style="padding:25px;float:left;margin-top:-2px">
+						<a href="home.html" style="float:left;font-size:40px;color:white;text-decoration:none;">Food Checker
+						</a>
+					</div>
+					
+					<div class="footer_c" style="margin-top:32px;margin-right:-10px">
+						<span class="facebook">
+							<a class="zocial-facebook" href="https://www.facebook.com/mario.yaputra" target="_blank"></a>
+						</span>
+						<span class="insta">
+							<a class="zocial-instagram" href="https://www.instagram.com/mario_yaputra/" target="_blank"></a>
+						</span>
+					</div>
+
+					<div class="footer_b" style="padding:35px;float:right;margin-right:380px">
+						<a href="home.html">Home</a>
+						<a href="history.html">History</a>
+						<a href="offer.html" style="color:white">Our Offer</a>
+						<a href="news.html">News</a>
+						<a href="contact.html">Contact Us</a>
+					</div>
+					<div class="nav" style="padding:35px;float:right;margin-right:-900px;margin-top:-15px">
+						<ul>
+							<li><a href="#1"><img src="pictures/Navigation/nav.png" style="width:12%;height:12%"></a></li>
+							<li><img src="pictures/Navigation/nav1.png" style="width:12%;height:12%;margin-bottom:7px"></li>
+							<li><a href="#2"><img src="pictures/Navigation/nav.png" style="width:12%;height:12%"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="realfooter">
+					<div class="footercontent" style="width:11%;margin:auto;color:grey">
+						<p>&copy;FoodChecker 2016</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
